@@ -42,20 +42,16 @@
 
                 <div class="col6">
                     <button class="Addbutton" type="submit" name="button">Add</button>
-                </div>
 
             </form>
+
+                <form action="/reset" method="POST">
+                    <button class="ResetBtn" type="submit" name="button">Reset</button>
+                </form>
+           
+                </div><br>
 
         </section>
-
-
-        <div class="reset">
-
-            <form action="/reset" method="POST">
-                <button class="ResetBtn" type="submit" name="button">Reset</button>
-            </form>
-        </div><br>
-
 
         <section class="showCity">
 
@@ -80,22 +76,23 @@
                     </label>
                 </div><br>
 
-
+              <div class="col7">
 
                 <button class="ShowBtn" type="submit" name="button">Show</button>
-
             </form>
+
+            <form action="/viewAll" method="POST">
+                <button class="ViewAllBtn" type="submit" name="button">View All</button>
+            </form>
+
+              </div>
 
         </section>
 
 
 
-        <div class="col-6">
-            <form action="/viewAll" method="POST">
-                <button class="ViewAllBtn" type="submit" name="button">View All</button>
-            </form>
+       
 
-        </div>
         <br>
 
         {{#each amaReg}}

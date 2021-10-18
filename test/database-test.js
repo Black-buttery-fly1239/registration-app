@@ -34,17 +34,15 @@ describe("The my_registration database", function () {
 		const theRegs = reg(pool);
 
 		await theRegs.regsAdd("CY 123-987");
-		await theRegs.regsAdd("CY 123-987");
-		assert.deepEqual([{ regnumber: "CY 123-987" }], await theRegs.list());
+		await theRegs.regsAdd("cy 123-987");
+		assert.deepEqual([{ regnumber: "CY 123-987" }], await theRegs.checkReg());
 	});
 
-  
 	// eslint-disable-next-line no-undef
 	it("should be able to show the registration number for Malmesbury (CK)", async function () {
 		const theRegs = reg(pool);
     
 		await theRegs.regsAdd("CK 123456");
-		await theRegs.list("CK 123456");
 		assert.deepEqual([{ regnumber: "CK 123456" }], await theRegs.show("CK"));
 	});
   
@@ -63,6 +61,8 @@ describe("The my_registration database", function () {
 		await theRegs.regsAdd("CA 124-124");
 		assert.deepEqual([{ regnumber: "CA 124-124" }], await theRegs.show("CA"));
 	});
+
+
   
 	// eslint-disable-next-line no-undef
 	it("should be able to show All the registration number in the database", async function () {

@@ -20,7 +20,7 @@ module.exports = function regRoutes(theRegs) {
 			const regAdd = req.body.theUser;
 
 			if (regAdd) {
-				if (await theRegs.checkReg(regAdd) === 0) {
+				if (await theRegs.checkReg(regAdd) < 1) {
 
 					if (regNumberX.test(regAdd)) {
 						await theRegs.regsAdd(regAdd, req);
@@ -28,7 +28,7 @@ module.exports = function regRoutes(theRegs) {
 					} else {
 						req.flash("error", "Please enter a valid format -CA 123-34/ CK 123456/ CY 456-765!!");
 					}
-					
+
 				} else {
 					req.flash("error", "Registration already exist!");
 				}

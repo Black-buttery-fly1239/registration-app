@@ -66,17 +66,23 @@ body {
  }
 
   input[type=submit], button {
-	  width: 13%;
 	  border-radius: 6px;
 	  cursor: pointer;
       transition-duration: 0.4s;
  } 
 
- .ResetBtn {
-     margin-top: 4px;
- }
+.col6 {
+    display: flex;
+}
 
- .ViewAllBtn{
-     margin-top: 4px;
- }
+.ResetBtn {
+    margin-left: 4px;;
+}
 
+.col7 {
+     display: flex;
+}
+
+.ViewAllBtn {
+    margin-left: 4px;
+}
