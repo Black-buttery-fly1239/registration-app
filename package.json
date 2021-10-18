@@ -1,0 +1,29 @@
+{
+  "name": "registration-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-handlebars": "^5.3.4",
+    "express-session": "^1.17.2",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.1",
+    "mocha": "^9.1.2",
+    "nodemon": "^2.0.13"
+  }
+}

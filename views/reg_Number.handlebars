@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="heading">
+            <h1>Registration App</h1>
+        </div>
+        <hr><br>
+
+        <section class="AddReg">
+
+            <form action="/reg_numbers" method="POST">
+
+
+                <div class="col2">
+                    <label for="">Registration Number</label>
+                    <input type="" name="theUser" class="RegistrationWithSettings" id="text-code"
+                        value="{{theRegs.enterReg}}" placeholder="Format:CA 123-34/CK 123456/CY 456-789">
+                </div><br>
+
+
+                <div class="col6">
+                    <button class="Addbutton" type="submit" name="button">Add</button>
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <div class="reset">
+
+            <form action="/reset" method="POST">
+                <button class="ResetBtn" type="submit" name="button">Reset</button>
+            </form>
+        </div><br>
+
+
+        <section class="showCity">
+
+            <form action="/show" method="POST">
+
+
+                <div class="col4">
+
+                    <label class="Malmesbury">
+                        <input class="theCity" type="radio" name="city" id="CK" value="CK">
+                        <span class="label-body">Malmesbury (CK)</span><br>
+                    </label>
+                    <br>
+                    <label class="Belville">
+                        <input class="theCity" type="radio" name="city" id="CY" value="CY">
+                        <span for="Belville">Belville (CY)</span><br>
+                    </label>
+                    <br>
+                    <label class="CT">
+                        <input class="theCity" type="radio" name="city" id="CA" value="CA">
+                        <span for="Cape Town">Cape Town (CA)</span>
+                    </label>
+                </div><br>
+
+
+
+                <button class="ShowBtn" type="submit" name="button">Show</button>
+
+            </form>
+
+        </section>
+
+
+
+        <div class="col-6">
+            <form action="/viewAll" method="POST">
+                <button class="ViewAllBtn" type="submit" name="button">View All</button>
+            </form>
+
+        </div>
+        <br>
+
+
+        <span class="theReg">
+            {{theReg}}
+        </span>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+@media(min-width: 800px) {
+    .col4 {
+        display: flex;
+    }
+}
+@keyframes power{
+    to {
+     width: 0;
+     height: 0;
+     overflow: hidden;
+    }
+}
+
+body {
+	background-color: rgb(93, 131, 131);
+    font-family: 'Cormorant Garamond', serif;
+	display: flex;
+	
+}
+
+.container {
+        background-color: honeydew;
+        width: 50%;
+        border-radius: 1em;
+        padding: 50px;
+        margin: auto;
+        margin-top: 30px;
+        font-size: 17.5px;
+    
+}
+
+.heading {
+	text-align: center;
+}
+
+.theError h4 {
+	   color: red;
+	   animation: power 0s ease-in 3s forwards;
+   }
+   .entry h4 {
+	   color:green;
+	   animation: power 0s ease-in 3s forwards;
+   }
+
+ .col1 {
+    text-align: center;
+ }
+ 
+ .RegistrationWithSettings {
+     width: 53%;
+ }
+
+ .theReg {
+    background-color: yellow;
+    border-style: solid; 
+    border-color: black;
+    border-radius: 25px;
+    border-spacing: 13px;
+    margin-right: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    display: inline-block;
+    margin: 0.5em;
+    padding:3px
+     
+ }
+
+  input[type=submit], button {
+	  width: 13%;
+	  border-radius: 6px;
+	  cursor: pointer;
+      transition-duration: 0.4s;
+ } 
+
+ .ResetBtn {
+     margin-top: 4px;
+ }
+
+ .ViewAllBtn{
+     margin-top: 4px;
+ }
+
