@@ -17,7 +17,7 @@ module.exports = function regno(pool) {
 	}
 
 	async function checkReg(reg){
-		console.log(reg);
+		// console.log(reg);
 		let newCheck = reg.toUpperCase();
 		var regCheck = await pool.query("select regNumber from reg where  regNumber = $1", [newCheck]);
 		return regCheck.rowCount;

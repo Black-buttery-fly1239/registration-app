@@ -84,7 +84,6 @@ describe("The my_registration database", function () {
 		const theRegs = reg(pool);
   
 		await theRegs.regsAdd("CA 123456");
-		await theRegs.list("CA 123456");
 		assert.equal(0, await theRegs.theReset());
 	});
 });
